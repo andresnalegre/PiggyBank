@@ -1,0 +1,24 @@
+.transaction-description:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+  }
+  
+  .transaction-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    min-width: 95px;
+  }
+  
+  .modal-title .fa-exclamation-triangle {
+    font-size: 1.2rem;
+  }
+  
+  .alert {
+    font-size: 0.9rem;
+  }
+  
+  .modal-footer .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }

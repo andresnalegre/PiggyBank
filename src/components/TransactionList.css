@@ -1,0 +1,30 @@
+.filter-section {
+    transition: all 0.3s ease;
+  }
+  
+  .form-control-sm {
+    font-size: 0.875rem;
+  }
+  
+  .filter-badge {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .bg-light {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-filter {
+    transition: all 0.2s ease;
+  }
+  
+  .btn-filter:hover {
+    transform: scale(1.05);
+  }
+  
+  .results-count {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }

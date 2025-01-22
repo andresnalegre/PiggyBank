@@ -1,0 +1,45 @@
+.header-logo {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
+  
+  .header-container {
+    padding: 2rem 0;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+  
+  .header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .title-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-top: -10px;
+  }
+  
+  .piggy {
+    color: #FF69B4;
+    font-weight: 700;
+  }
+  
+  .bank {
+    color: #333333;
+    font-weight: 600;
+    margin-left: 5px;
+  }
+  
+  .header-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #666;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
