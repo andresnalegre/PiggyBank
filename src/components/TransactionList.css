@@ -1,30 +1,147 @@
-.filter-section {
-    transition: all 0.3s ease;
-  }
-  
-  .form-control-sm {
-    font-size: 0.875rem;
-  }
-  
-  .filter-badge {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.5rem;
-    margin-left: 0.5rem;
-  }
-  
-  .bg-light {
-    transition: all 0.3s ease;
-  }
-  
-  .btn-filter {
-    transition: all 0.2s ease;
-  }
-  
-  .btn-filter:hover {
-    transform: scale(1.05);
-  }
-  
-  .results-count {
-    font-size: 0.875rem;
-    color: #6c757d;
-  }
+.tlist-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s ease;
+}
+
+.tlist-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.tlist-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.tlist-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.tlist-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.tlist-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-secondary);
+  transition: all 0.15s;
+}
+
+.tlist-btn:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+  background: var(--surface);
+}
+
+.tlist-btn.export-btn:hover {
+  border-color: #2A7D5F;
+  color: #2A7D5F;
+}
+
+.tlist-btn.filter-active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.filter-panel {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 120px;
+}
+
+.filter-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-hint);
+}
+
+.filter-input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.filter-input:focus {
+  border-color: var(--accent);
+}
+
+.filter-clear {
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.filter-clear:hover {
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.tlist-count {
+  font-size: 0.75rem;
+  color: var(--text-hint);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+.tlist-empty {
+  text-align: center;
+  padding: 2.5rem 0;
+  color: var(--text-hint);
+  font-size: 0.9rem;
+}
+
+.tlist-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

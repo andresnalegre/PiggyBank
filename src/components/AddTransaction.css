@@ -1,34 +1,87 @@
-.card {
-    background: var(--piggy-pink-light);
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .form-control {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .form-control:focus {
-    border-color: var(--piggy-pink);
-    box-shadow: 0 0 0 0.2rem rgba(255, 105, 180, 0.25);
-  }
-  
-  .btn-primary {
-    background-color: var(--piggy-pink);
-    border-color: var(--piggy-pink);
-  }
-  
-  .btn-primary:hover {
-    background-color: #ff4da6;
-    border-color: #ff4da6;
-  }
-  
-  .form-control-sm {
-    height: calc(1.5em + 0.5rem + 2px);
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    border-radius: 0.2rem;
-  }
+.add-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.2s ease;
+}
+
+.add-card:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+.add-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.add-field {
+  margin-bottom: 1.1rem;
+}
+
+.add-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-hint);
+  margin-bottom: 0.4rem;
+}
+
+.add-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+  -webkit-appearance: none;
+}
+
+.add-input:focus {
+  border-color: var(--accent);
+  background: var(--surface);
+  box-shadow: 0 0 0 3px rgba(232, 100, 154, 0.1);
+}
+
+.add-hint {
+  font-size: 0.72rem;
+  color: var(--text-hint);
+  margin-top: 0.3rem;
+  display: block;
+}
+
+.add-btn {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+}
+
+.add-btn:hover {
+  background: var(--accent-dark);
+  box-shadow: 0 4px 16px rgba(232, 100, 154, 0.3);
+}
+
+.add-btn:active {
+  transform: scale(0.99);
+}

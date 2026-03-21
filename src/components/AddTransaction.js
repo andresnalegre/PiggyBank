@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './AddTransaction.css';
 
 function AddTransaction({ onAdd }) {
   const [description, setDescription] = useState('');
@@ -7,13 +8,12 @@ function AddTransaction({ onAdd }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
     if (!description || !amount || !date) return;
 
     onAdd({
       description,
       amount: parseFloat(parseFloat(amount).toFixed(2)),
-      date: new Date(date).toISOString().split('T')[0]
+      date: new Date(date).toISOString().split('T')[0],
     });
 
     setDescription('');
@@ -22,49 +22,43 @@ function AddTransaction({ onAdd }) {
   };
 
   return (
-    <div className="card">
-      <div className="card-body">
-        <h4 className="card-title mb-3">Add Transaction</h4>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-3">
-            <label className="form-label">Date</label>
-            <input
-              type="date"
-              className="form-control"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              max={new Date().toISOString().split('T')[0]}
-            />
-          </div>
-          <div className="mb-3">
-            <label className="form-label">Description</label>
-            <input
-              type="text"
-              className="form-control"
-              value={description}
-              onChange={(e) => setDescription(e.target.value)}
-              placeholder="Enter description"
-            />
-          </div>
-          <div className="mb-3">
-            <label className="form-label">Amount ($)</label>
-            <input
-              type="number"
-              step="0.01"
-              className="form-control"
-              value={amount}
-              onChange={(e) => setAmount(e.target.value)}
-              placeholder="0.00"
-            />
-            <small className="text-muted">
-              Use negative numbers (-) for expenses and positive for income
-            </small>
-          </div>
-          <button type="submit" className="btn btn-primary w-100">
-            Add
-          </button>
-        </form>
-      </div>
+    <div className="add-card">
+      <h4 className="add-card-title">New Transaction</h4>
+      <form onSubmit={handleSubmit}>
+        <div className="add-field">
+          <label className="add-label">Date</label>
+          <input
+            type="date"
+            className="add-input"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            max={new Date().toISOString().split('T')[0]}
+          />
+        </div>
+        <div className="add-field">
+          <label className="add-label">Description</label>
+          <input
+            type="text"
+            className="add-input"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            placeholder="e.g. Grocery shopping"
+          />
+        </div>
+        <div className="add-field">
+          <label className="add-label">Amount ($)</label>
+          <input
+            type="number"
+            step="0.01"
+            className="add-input"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+            placeholder="0.00"
+          />
+          <span className="add-hint">Use negative (−) for expenses, positive for income</span>
+        </div>
+        <button type="submit" className="add-btn">Add Transaction</button>
+      </form>
     </div>
   );
 }
