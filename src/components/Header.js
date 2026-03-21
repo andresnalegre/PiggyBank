@@ -12,7 +12,7 @@ function Header() {
           <span className="bank">bank</span>
         </span>
       </h1>
-      <p className="header-subtitle">Control your finances simply and intelligently</p>
+      <p className="header-subtitle">Control your finances easily</p>
     </div>
   );
 }
