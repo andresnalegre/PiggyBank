@@ -1,55 +1,50 @@
-# Piggy Bank
+<div align="center">
 
-**Piggy Bank** is a React project where I use JavaScript to create a simple piggy bank where I can add and withdraw amounts, as well as view a transaction history by date.
+  <img src="public/logo.png" alt="PiggyBank" width="160" />
+
+  # PiggyBank
+
+  A personal finance tracker built with React, hosted on GitHub Pages.
+
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-PiggyBank-blue?style=flat-square)](https://andresnalegre.github.io/PiggyBank/)
+  [![GitHub](https://img.shields.io/badge/Made%20by-Andres%20Nicolas%20Alegre-brightgreen?style=flat-square)](https://github.com/andresnalegre)
+</div>
 
 ---
+
+## About
+
+**PiggyBank** is a demo personal finance tracker designed to help you keep track of your income and expenses easily.
+
+Everything runs in the browser using `localStorage`.
 
 ## Features
 
-- Bootstrap
-- Friendly UI
-- Data Storage
+- Add, edit and delete transactions
+- Balance overview with income and expenses
+- Filter transactions by date range
+- Export transactions to Excel
 
----
-
-## Technologies Used
+## Stack
 
 - React
+- Bootstrap
+- localStorage
+- GitHub Pages
 
----
+## Run locally
 
-## How to use
-
-1. **Clone the Project**:
-   - Open your terminal, go to the folder where you want to save the project, and run:
-
-     ```bash
-     git clone https://github.com/andresnalegre/PiggyBank
-     ```
-     
-2. **Go to the Project Folder**:
-   - Change to the project folder:
-
-     ```bash
-     cd PiggyBank
-     ```
-     
-3. **Run the Project**:
-   - Run the project with:
-
-     ```bash
-     npm start
-     ```
----
+```bash
+git clone https://github.com/andresnalegre/PiggyBank
+cd PiggyBank
+npm install
+npm start
+```
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE)
-
----
+This project is licensed under the [MIT License](LICENSE).
 
 ## Contributing
 
-Contributions are welcome! If you have any improvements or new features you’d like to add, feel free to fork the repository and submit a pull request. Please ensure that your code follows the existing style and structure.
-
-[![GitHub](https://img.shields.io/badge/Made%20by-Andres%20Nicolas%20Alegre-brightgreen)](https://github.com/andresnalegre)
+Contributions are welcome! Feel free to fork the repository and submit a pull request. Please ensure your code follows the existing style and structure.
