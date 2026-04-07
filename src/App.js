@@ -54,26 +54,13 @@ function App() {
     }
   };
 
-  const statistics = {
-    total: transactions.reduce((acc, curr) => acc + curr.amount, 0),
-    income: transactions
-      .filter(t => t.amount > 0)
-      .reduce((acc, curr) => acc + curr.amount, 0),
-    expenses: transactions
-      .filter(t => t.amount < 0)
-      .reduce((acc, curr) => acc + curr.amount, 0),
-  };
-
   return (
     <div className="App">
       <div className="container py-4">
         <Header />
         <div className="row">
           <div className="col-md-6 mx-auto">
-            <Balance 
-              transactions={transactions}
-              statistics={statistics}
-            />
+            <Balance transactions={transactions} />
             <TransactionList 
               transactions={transactions} 
               onDelete={deleteTransaction}
