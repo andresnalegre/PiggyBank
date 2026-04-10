@@ -3,7 +3,7 @@
 
   # PiggyBank
 
-  A personal finance tracker built with React, hosted on GitHub Pages.
+  Take control of your personal expenses.
 
   ![React](https://img.shields.io/badge/React-18-blue?logo=react)
   ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?logo=bootstrap)
@@ -17,7 +17,7 @@
 
 ## About
 
-**PiggyBank** is a demo personal finance tracker designed to help you keep track of your income and expenses easily. Everything runs in the browser using `localStorage`.
+**PiggyBank** is a personal finance tracker designed to help you easily track your income and expenses. The live version runs in the browser using `localStorage` and does not use a database.
 
 ## Features
 
@@ -25,34 +25,6 @@
 - Balance overview with income and expenses
 - Filter transactions by date range
 - Export transactions to Excel
-
----
-
-## Run locally
-
-### Requirements
-
-- Node.js 18+
-
-### Setup
-
-```bash
-git clone https://github.com/andresnalegre/PiggyBank
-cd PiggyBank
-npm install
-npm start
-```
-
----
-
-## Tech stack
-
-| Layer   | Technology    |
-|---------|---------------|
-| UI      | React 18      |
-| Design  | Bootstrap 5   |
-| Storage | localStorage  |
-| Deploy  | GitHub Pages  |
 
 ---
 
