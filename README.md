@@ -17,7 +17,7 @@
 
 ## About
 
-**PiggyBank** is a personal finance tracker designed to help you easily track your income and expenses. The live version runs in the browser using `localStorage` and does not use a database.
+**PiggyBank** is a personal finance tracker designed to help you easily track your income and expenses. The live demo version runs in the browser using `localStorage` and does not use a database.
 
 ## Features
 
