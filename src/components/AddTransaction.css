@@ -34,6 +34,42 @@
   margin-bottom: 0.4rem;
 }
 
+.add-toggle {
+  display: flex;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.add-toggle-btn {
+  flex: 1;
+  padding: 0.65rem 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  color: var(--text-hint);
+}
+
+.add-toggle-btn.expense.active {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.add-toggle-btn.income.active {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.add-toggle-btn:not(.active):hover {
+  background: var(--surface);
+  color: var(--text-secondary);
+}
+
 .add-input {
   width: 100%;
   background: var(--bg);
@@ -55,18 +91,10 @@
   box-shadow: 0 0 0 3px rgba(232, 100, 154, 0.1);
 }
 
-.add-hint {
-  font-size: 0.72rem;
-  color: var(--text-hint);
-  margin-top: 0.3rem;
-  display: block;
-}
-
 .add-btn {
   width: 100%;
   margin-top: 0.5rem;
   padding: 0.75rem;
-  background: var(--accent);
   color: #fff;
   border: none;
   border-radius: var(--radius-sm);
@@ -78,11 +106,30 @@
   transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
 }
 
-.add-btn:hover {
-  background: var(--accent-dark);
-  box-shadow: 0 4px 16px rgba(232, 100, 154, 0.3);
+.add-btn.expense {
+  background: var(--danger);
+}
+
+.add-btn.expense:hover {
+  background: #a93226;
+  box-shadow: 0 4px 16px rgba(192, 57, 43, 0.3);
+}
+
+.add-btn.income {
+  background: var(--success);
+}
+
+.add-btn.income:hover {
+  background: #1f6347;
+  box-shadow: 0 4px 16px rgba(42, 125, 95, 0.3);
 }
 
 .add-btn:active {
   transform: scale(0.99);
+}
+
+@media (max-width: 480px) {
+  .add-card {
+    padding: 1.25rem 1.25rem;
+  }
 }
