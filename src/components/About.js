@@ -10,7 +10,13 @@ function About({ onClose }) {
           <FaTimes size={13} />
         </button>
 
-        <h2 className="about-title">About PiggyBank</h2>
+        <div className="about-title">
+          <span className="about-title-small">About</span>
+          <span className="about-title-big">
+            <span className="piggy">Piggy</span>
+            <span className="bank">Bank</span>
+          </span>
+        </div>
         <p className="about-desc">
           A personal finance tracker that lets you manage income and expenses easily, with Excel import and export support.
         </p>
